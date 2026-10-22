@@ -36,12 +36,14 @@ See `proposal/model-candidates.png`. All are Sketchfab CC-BY 4.0 (no CC0 ring or
 watch of jewelry quality exists on Sketchfab or Poly Haven).
 
 Rings (recommended first):
+
 - Trilogy Custom Engagement Ring, Aaron Clark, 25k faces (`6e9d6f66`): closest to
   the example look.
 - Doji Diamond Ring, M. Visual, 76k faces (`297133c2`): needs heavy decimation.
 - The Ring: 1 carat, Evan, 1.8k faces (`378f6df2`): lightest.
 
 Watches (recommended first):
+
 - Luxury Watch, Pieter Ferreira, 8k faces (`98acd80e`): generic dial.
 - AMBASSADOR Heritage 1863, Mark Peters, 61k faces (`cd9d71cd`): elegant, check
   the dial for a real brand mark first.

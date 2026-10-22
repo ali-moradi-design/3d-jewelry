@@ -1,0 +1,40 @@
+# Third-party licenses
+
+## pmndrs/examples
+
+The gem refraction, soft shadow, presentation controls and bloom setup in this project started
+from the `diamond-ring` and `bouncy-watch` examples. The example models are not used.
+
+MIT License
+
+Copyright (c) 2024 Poimandres
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## Fonts
+
+Cormorant Garamond: Copyright 2015 The Cormorant Project Authors
+(github.com/CatharsisFonts/Cormorant). Inter: Copyright 2016 The Inter Project Authors
+(github.com/rsms/inter). Both are licensed under the SIL Open Font License, Version 1.1,
+https://openfontlicense.org. The font files are bundled through the `@fontsource` packages.
+
+## npm dependencies
+
+three.js, React Three Fiber, drei, react-postprocessing, Next.js and React are MIT licensed;
+`postprocessing` is Zlib licensed. Their license files ship inside each package in `node_modules`.

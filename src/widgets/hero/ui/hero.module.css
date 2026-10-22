@@ -1,0 +1,118 @@
+.section {
+  --progress: 0;
+  position: relative;
+  height: 280vh;
+  background: var(--stage);
+}
+.stage {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
+}
+.scene {
+  position: absolute;
+  inset: 0;
+}
+.intro {
+  position: absolute;
+  left: var(--gutter);
+  bottom: clamp(88px, 14vh, 160px);
+  max-width: min(520px, 90vw);
+  opacity: calc(1 - var(--progress) * 4);
+  transform: translateY(calc(var(--progress) * -40px));
+  pointer-events: none;
+}
+.intro > * {
+  pointer-events: auto;
+}
+.eyebrow {
+  margin: 0 0 18px;
+  font: 500 0.72rem/1 var(--font-sans);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+}
+.title {
+  margin: 0 0 22px;
+  font: 400 clamp(3rem, 8vw, 6rem) / 0.98 var(--font-serif);
+  letter-spacing: -0.01em;
+}
+.title em {
+  color: var(--gold-deep);
+}
+.lead {
+  margin: 0 0 30px;
+  max-width: 420px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.caption {
+  position: absolute;
+  left: var(--gutter);
+  bottom: clamp(88px, 14vh, 160px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 320px;
+  margin: 0;
+  opacity: clamp(0, calc((var(--progress) - 0.45) * 5), 1);
+  transform: translateY(calc((1 - var(--progress)) * 24px));
+}
+.captionLabel {
+  font: 500 0.72rem/1 var(--font-sans);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+}
+.captionText {
+  font: 400 clamp(1.4rem, 2.6vw, 2rem) / 1.2 var(--font-serif);
+}
+.hint {
+  position: absolute;
+  left: var(--gutter);
+  right: var(--gutter);
+  bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  font: 500 0.68rem/1 var(--font-sans);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.hintScroll {
+  opacity: calc(1 - var(--progress) * 6);
+}
+
+@media (max-width: 767px) {
+  .section {
+    height: 240vh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section {
+    height: auto;
+  }
+  .stage {
+    position: relative;
+    height: 100svh;
+    min-height: 640px;
+  }
+  .intro {
+    opacity: 1;
+    transform: none;
+  }
+  .caption,
+  .hintScroll {
+    display: none;
+  }
+}
