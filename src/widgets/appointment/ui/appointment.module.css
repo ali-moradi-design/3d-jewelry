@@ -1,0 +1,32 @@
+.section {
+  padding: clamp(72px, 10vw, 140px) var(--gutter);
+  background: var(--sand);
+}
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(32px, 6vw, 96px);
+  max-width: 1360px;
+  margin: 0 auto;
+  align-items: start;
+}
+.copy {
+  max-width: 440px;
+  margin: 0 0 32px;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--muted);
+}
+.address {
+  font-style: normal;
+  line-height: 1.7;
+}
+.address span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
