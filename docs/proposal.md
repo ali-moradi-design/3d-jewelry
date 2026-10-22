@@ -1,4 +1,8 @@
-# Proposal (waiting for approval, no code written yet)
+# Proposal (approved 2026-10-22)
+
+> Outcome: the proposal was approved. Because Sketchfab models cannot be downloaded without a
+> login, the ring and the watch were built in code instead (no third-party models, no license or
+> brand risk), and the studio HDRI is generated too. See `CREDITS.md`.
 
 ## Source examples (run on 2026-10-22, pmndrs/examples, MIT)
 

@@ -55,4 +55,7 @@ Copied from `notes/3d-landings-brief.md` in the private roadmap repo (main, 2026
 ## Decisions for this repo
 
 - 2026-10-22: the site is English only (single language, no i18n).
-- Fictional brand and page sections: see `docs/proposal.md` (waiting for approval).
+- Fictional brand and page sections: see `docs/proposal.md` (approved 2026-10-22).
+- Models: the ring, the watch and the HDRI are generated in code instead of downloaded (see
+  `CREDITS.md`). Camera moves on scroll are done with a small custom scroll-progress hook instead
+  of drei `ScrollControls`, so the page keeps normal scrolling and sticky layout.
