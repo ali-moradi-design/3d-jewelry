@@ -1,0 +1,41 @@
+.header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px var(--gutter);
+  background: rgb(240 239 236 / 0.9);
+  border-bottom: 1px solid rgb(20 17 15 / 0.08);
+  backdrop-filter: blur(10px);
+}
+.logo {
+  font: 500 1.15rem/1 var(--font-serif);
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.list {
+  display: flex;
+  gap: clamp(18px, 3vw, 40px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.list a {
+  display: inline-block;
+  padding: 10px 0;
+  font: 500 0.7rem/1 var(--font-sans);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.list a:hover {
+  color: var(--gold-deep);
+}
+@media (max-width: 640px) {
+  .optional {
+    display: none;
+  }
+}
